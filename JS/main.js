@@ -73,9 +73,7 @@
 // console.log(item);
 // for (let key in item){
 //     console.log(key, item[key]);
-// }          
-
-
+// }
 
 // HM2
 // 1
@@ -147,4 +145,60 @@
 // let sum = digit1 + digit2 + digit3;
 // alert(`Сума ваших чисел = ${sum}`);
 
+// HM 3
+// -- 1 --
+// У вас є масив об’єктів fruts, і в кожному з них є name
+// Напишіть код, який перетворює їх в масив імен.
+// const fruts = [
+//   { id: 0, name: "Apple" },
+//   { id: 1, name: "Tomat" },
+//   { id: 2, name: "Cherry" },
+//   { id: 3, name: "Orange" },
+// ];
+// let newArr = fruts.map(item => item.name);
+// console.log(newArr);
+
+// -- 2 --
+//Виведіть парні числа від 2 до 10, використовуючи цикл for.
+// for (let i = 2; i <= 10; i += 2) {
+//   console.log(i);
+// }
+
+// -- 3 --
+//Замініть цикл "for" на "while"
+// for (let i = 0; i < 5; i++) {
+// console.lpg( `цифра ${i}!` );
+// }
+// let i = 1;
+// while (i <= 5) {
+// console.log( `цифра ${i}!` );
+// i+=1;
+// }
+
+// -- 4 --
+//Напишіть цикл, який пропонує prompt ввести число більше за 100.
+//Якщо відвідувач введе менше число – попросити ввести ще раз, і так далі.
+//Цикл повинен запитувати число доти, доки відвідувач не введе число,
+// більше за 100, або не скасує ввід/введе порожній рядок.
+
+// let number = +prompt("Введіть число більше за 100");
+// while (number <= 100){
+//     alert("Будь ласка, введіть ще раз");
+//     number = +prompt("Введіть число більше за 100");
+// };
+
+// -- 5 --
+// Вирахуйте середній вік
+
+// const girls = [
+// { age: 23, name: "Оля" },
+// { age: 29, name: "Аня" },
+// { age: 10, name: "Юля" },
+// { age: 20, name: "Катя" },
+// ];
+// let age = girls.map(item =>item.age);
+// console.log(age);
+
+// let sum = age.reduce((avarage, item) => avarage + item) / age.length;
+// console.log(sum);
 
