@@ -189,7 +189,6 @@
 
 // -- 5 --
 // Вирахуйте середній вік
-
 // const girls = [
 // { age: 23, name: "Оля" },
 // { age: 29, name: "Аня" },
@@ -198,7 +197,59 @@
 // ];
 // let age = girls.map(item =>item.age);
 // console.log(age);
-
 // let sum = age.reduce((avarage, item) => avarage + item) / age.length;
 // console.log(sum);
 
+// HM 4
+// ---1---
+// Перепишіть функцію, використовуючи '?' або '||'
+// function checkAge(age) {
+// if (age > 18) {
+// return true;
+// } else {
+// return confirm('Батьки дозволили?');
+// }
+// }
+// function checkAge(age) {
+// return age > 18 ? true : confirm('Батьки дозволили?');
+// }
+// checkAge(12);
+
+// ---2---
+// Напишіть функцію min(a, b), яка повертає менше з двох чисел a та b.
+// let min = (a, b) =>{
+//     return console.log(Math.min(a, b));
+// }
+// min(30, 49);
+
+// ---3---
+// Перепишіть з використанням стрілкових функцій
+// Замініть Функціональні Вирази на стрілкові функції у коді нижче:
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes();
+//   else no();
+// }
+// ask(
+//   "Ви згодні?",
+//   function () {
+//     alert("Ви погодились.");
+//   },
+//   function () {
+//     alert("Ви скасували виконання.");
+//   }
+// );
+
+// let ask = (question, yes, no) => {
+//   if (confirm(question)) yes();
+//   else no();
+// };
+
+// ask(
+//   "Ви згодні?",
+//   () => {
+//     alert("Ви погодились.");
+//   },
+//   () => {
+//     alert("Ви скасували виконання.");
+//   }
+// );
