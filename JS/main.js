@@ -323,12 +323,42 @@
 // 2) cherry 58, 1,3
 // 3) jrange 89. 3,4
 // const getFruits = function(name, pricePerKilo, quantity){
-    // return `${name} буде коштувати `+ pricePerKilo * quantity + ` грн`;
-    // return {
-    //     name: name,
-    //     amount: pricePerKilo * quantity
-    // }
+// return `${name} буде коштувати `+ pricePerKilo * quantity + ` грн`;
+// return {
+//     name: name,
+//     amount: pricePerKilo * quantity
+// }
 // };
 // getFruits("banana", 30, 4.5);
 // console.log(
 // getFruits("banana", 30, 4.5));
+
+// створити початковий клас Abonent, де зберігатимуться ім*я і номер
+// створити set який прийматиме телефон і номер
+// створити get який виводитиме данні про абонента
+// створити три різних юзери
+// вивести данні
+//
+class Abonent {
+  constructor(options) {
+    this.name = options.name, 
+    this.number = options.number;
+  }
+ 
+  set name (newName){
+     this.newName = `Ваш ім'я ${newName}`;
+  }
+  set number (newNumber){
+     this.newNumber = `Ваш номер телефону ${newNumber}`;
+  }
+  get name(){
+    return `${this.newName} та ${this.newNumber}`
+  }
+}
+const abon = new Abonent({
+  name: "Andrii",
+  number: "380"
+});
+// const a = new Abonent("Artem", 380945678490);
+console.log(abon);
+
