@@ -339,26 +339,71 @@
 // створити три різних юзери
 // вивести данні
 //
-class Abonent {
-  constructor(options) {
-    this.name = options.name, 
-    this.number = options.number;
-  }
- 
-  set name (newName){
-     this.newName = `Ваш ім'я ${newName}`;
-  }
-  set number (newNumber){
-     this.newNumber = `Ваш номер телефону ${newNumber}`;
-  }
-  get name(){
-    return `${this.newName} та ${this.newNumber}`
-  }
-}
-const abon = new Abonent({
-  name: "Andrii",
-  number: "380"
-});
-// const a = new Abonent("Artem", 380945678490);
-console.log(abon);
+// class Abonent {
+//   constructor(options) {
+//     this.name = options.name,
+//     this.number = options.number;
+//   }
+
+//   set name (newName){
+//      this.newName = `Ваш ім'я ${newName}`;
+//   }
+//   set number (newNumber){
+//      this.newNumber = `Ваш номер телефону ${newNumber}`;
+//   }
+//   get name(){
+//     return `${this.newName} та ${this.newNumber}`
+//   }
+// }
+// const abon = new Abonent({
+//   name: "Andrii",
+//   number: "380"
+// });
+
+// const abon2 = new Abonent({
+//   name: "Mariia",
+//   number: "380437934"
+// });
+
+// const abon3 = new Abonent({
+//   name: "Artem",
+//   number: "0945637293"
+// });
+// console.log(abon,abon2,abon3);
+
+// HM6
+// --- Calculator---
+// Створіть функцію-конструктор Calculator, який створює об’єкти з трьома методами:
+// read() запитує два значення за допомогою prompt і запам’ятовує їх у властивостях об’єкта
+// sum() повертає суму цих властивостей
+// mul() повертає результат множення даних властивостей
+
+// function Calculator() {
+//   this.read = function () {
+//     this.a = +prompt("Введіть 1 число", 0);
+//     this.b = +prompt("Введіть 2 число", 0);
+//   };
+//   this.sum = function () {
+//     return this.a + this.b;
+//   };
+//   this.mult = function () {
+//     return this.a * this.b;
+//   };
+// }
+// let user1 = new Calculator ();
+// user1.read();
+// console.log(user1.sum(), user1.mult());
+//
+// HM7
+// Напишіть код, щоб вибрати елемент з атрибутом data-widget-name з документа
+// та прочитати його значення.
+// <!DOCTYPE html>
+// <html>
+// <body>
+// <div data-widget-name="menu">Виберіть жанр</div>
+// <script> const atElem = document.querySelector('#it');
+    // console.log(atElem.getAttribute('data-widget-name'));</script>
+// </body>
+// </html>
+
 
