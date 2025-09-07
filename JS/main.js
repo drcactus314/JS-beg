@@ -393,6 +393,7 @@
 // let user1 = new Calculator ();
 // user1.read();
 // console.log(user1.sum(), user1.mult());
+
 //
 // HM7
 // Напишіть код, щоб вибрати елемент з атрибутом data-widget-name з документа
@@ -407,3 +408,33 @@
 // </html>
 
 
+// //HM 8
+// -----1----
+// Напишіть такий JavaScript, щоб після натискання на кнопку button, елемент
+// <div id="text"> зникав.
+
+// const elem = document.querySelector("#text");
+// const hideBtn = document.querySelector("#btn");
+// function hideText(){
+//     elem.style.display = "none";
+// }
+// hideBtn.addEventListener("click", hideText)
+
+// -----2----
+// Напишіть такий код, щоб після натискання на кнопку, вона зникала.
+// const btn = document.querySelector("#btn");
+// function hideBtn(){
+//     btn.classList.add("hide");
+// }
+// btn.addEventListener("click", hideBtn);
+
+// -----3----
+// Створіть дерево, яке показує/приховує дочірні вузли при кліці
+// const parent = document.querySelector(".parent");
+// const child = document.querySelector(".child");
+// parent.addEventListener("click", ()=>{
+//     let children = document.querySelectorAll(".child");
+//     children.forEach(child => {
+//         child.classList.toggle("hide");
+//     });
+// });
